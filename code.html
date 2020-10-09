@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FizzBuz-Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/css/preloader.min.css" rel="stylesheet" />
+    <link href="Content/css/circle.css" rel="stylesheet" />
+    <link href="Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/css/fm.revealator.jquery.min.css" rel="stylesheet" />
+    <link href="Content/css/style.css" rel="stylesheet" />
+    <link href="Content/css/prism.css" rel="stylesheet" />
+
+    <!-- CSS Skin File -->
+    <link href="Content/css/skins/blue.css" rel="stylesheet" />
+
+    <!-- Modernizr JS File -->
+    <script src="Scripts/modernizr.custom.js"></script>
+</head>
+
+<body class="portfolio light">
+    <!-- Header Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+            <li class="icon-box">
+                <i class="fa fa-info-circle"></i>
+                <a href="">
+                    <h2>instructions</h2>
+                </a>
+            </li>
+            <li class="icon-box active">
+                <i class="fa fa-compass"></i>
+                <a href="index.html">
+                    <h2>fizzbuzz</h2>
+                </a>
+            </li>
+       </ul>
+        <!-- Fixed Navigation Ends -->
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="list-unstyled" id="menu">
+                    <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                    <li class="active"><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                    <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+    <!-- Page Title Starts -->
+    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+        <h1>my <span>script</span></h1>
+        <span class="title-bg">CODEING</span>
+    </section>
+    <!-- Page Title Ends -->
+    <!-- Main Content Starts -->
+
+<div class="row">
+    <div class="col-8 offset-2">
+
+        <pre>
+        <code class="language-js line-numbers">    const printBox = document.getElementById("printBox");
+            const statusBox = document.getElementById("statusBox");
+
+            document.getElementById("button").addEventListener('click', () => {
+                var inputBox = document.getElementById("inputBox").value;
+                var inputReverse = inputBox.split("").reverse().join("");
+                let input = inputBox.toLowerCase().replace(/\s|\'|\"/g, '');
+                let outputReverse = inputReverse.toLowerCase().replace(/\s|\'|\"/g, '');
+
+                printBox.innerHTML = outputReverse
+                verify(outputReverse, input)
+            })
+            function verify(outputReverse, input) {
+                if (outputReverse === input) {
+                statusBox.innerHTML = "That's a palindrome!"
+            } else if (outputReverse !== input) {
+                statusBox.innerHTML = "That's a palindon't!"
+                }
+            }
+            </code>
+        </pre>
+    </div>
+</div>
+    <!-- Main Content Ends -->
+    <!-- Template JS Files -->
+    <script src="Scripts/jquery-3.5.0.min.js"></script>
+    <script src="Scripts/preloader.min.js"></script>
+    <script src="Scripts/fm.revealator.jquery.min.js"></script>
+    <script src="Scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="Scripts/masonry.pkgd.min.js"></script>
+    <script src="Scripts/classie.js"></script>
+    <script src="Scripts/cbpGridGallery.js"></script>
+    <script src="Scripts/jquery.hoverdir.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/custom.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/prism.js"></script>
+
+</body>
+
+</html>
