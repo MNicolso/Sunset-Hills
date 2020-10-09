@@ -112,6 +112,7 @@
     <Content Include="Content\css\style.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\img\Favicon.png" />
+    <Content Include="Content\img\mountains.png" />
     <Content Include="Content\img\projects\navigation\close-button-light.png" />
     <Content Include="Content\img\projects\navigation\close-button.png" />
     <Content Include="Content\img\projects\navigation\left-arrow-light.png" />

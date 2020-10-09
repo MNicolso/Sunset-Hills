@@ -109,7 +109,7 @@ body.home.light .home-details h6 {
 }
 
 body.home.light .bg {
-  box-shadow: 0 0 7px rgba(0,0,0,.3);
+  box-shadow: 0 0 7px rgba(0,0,0,.0);
 }
 
 body.light .preloader .black_wall {
@@ -214,12 +214,12 @@ body.light hr.separator {
 }
 
 @media (min-width: 992px) {
-  body.light .header ul.icon-menu li.icon-box {
-    background-color: #eee;
-  }
+    body.light .header ul.icon-menu li.icon-box {
+        background-color: #123b3b;
+    }
 
   body.light .header ul.icon-menu li.icon-box i {
-    color: #666;
+    color: #fff;
   }
 
   body.light .header ul.icon-menu li.icon-box.active,
@@ -532,10 +532,10 @@ body.light hr.separator {
 }
 
 .home .bg {
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fpic&psig=AOvVaw3E5nSIbELnO881xiED6J60&ust=1602169126105000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJi91a3fouwCFQAAAAAdAAAAABAD);
+    background-image: url(../img/mountains.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: bottom;
     height: calc(100vh - 60px);
     z-index: 111;
     border-radius: 15px;
@@ -1323,8 +1323,8 @@ body.light hr.separator {
   }
 
   .btn:hover span {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+    -webkit-transform: translateX(00px);
+    transform: translateX(00px);
   }
 
   .btn:hover:before {

@@ -40,16 +40,13 @@
                 <div class="collapse navbar-collapse" id="toggle-menu">
                     <ul class="navbar-nav nav-pills ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#resume">Sunset Hills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">TacocaT</a>
+                            <a class="nav-link" href="https://tacocatminiproject.netlify.app/">TacocaT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#miniSites">Sum of All Fears</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#blogTextAnchor">Sunset Hills</a>
+                            <a class="nav-link" href="https://fizzbuzzminiproject.netlify.app/index.html">FizzBuzz</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://maccoll-nicolson-portfolio.netlify.app/">Back to Portfolio</a>
@@ -75,6 +72,12 @@
                 <i class="fa fa-code"></i>
                 <a href="code.html">
                     <h2>code</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-git"></i>
+                <a href="https://github.com/MNicolso/Sunset-Hills" target="_blank">
+                    <h2>git</h2>
                 </a>
             </li>
         </ul>
@@ -105,41 +108,40 @@
         <div class="col-lg-4 bg position-fixed d-none d-lg-block"> </div>
         <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
             <div>
-                <img src="" title="https://www.deviantart.com/ragnaruz" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" />
                 <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">Mini Project</h6>
                 <h1 class="text-uppercase poppins-font"><span>SunSet </span>Hills</h1>
                 <p class="open-sans-font text-dark h4"> <span class="h4" id="statusBox"></span></p>
                 <p class="open-sans-font text-dark h4"> <span id="printBox"></span></p>
-                <div class="row">
-                    <div class="col-2">
-                        <input type="number" step="1" id="buildingOneInput" value="1" />
-                    </div>
-                    <div class="col-2">
-                        <input type="number" step="1" id="buildingTwoInput" value="2" />
-                    </div>
-                    <div class="col-2">
-                        <input type="number" step="1" id="buildingThreeInput" value="3" />
-                    </div>
-                    <div class="col-2">
-                        <input type="number" step="1" id="buildingFourInput" value="4" />
-                    </div>
-                    <div class="col-2">
-                        <input type="number" step="1" id="buildingFiveInput" value="5" />
-                    </div>
-                    <div class="col-2">
-                        <input type="number" step="1" id="buildingSixInput" value="6" />
-                    </div>
-
+            </div>   
+                <div class="row container fluid">
+                <div class="col">
+                    <input type="number" step="1" min="1" max="10"id="buildingOneInput" value="1" />
                 </div>
-                <div class="row text-center">
+                <div class="col">
+                    <input type="number" step="1" min="1" max="10" id="buildingTwoInput" value="2" />
                 </div>
-                <div class="row text-center offset-1">
-                    <button class="btn btn-download" id="button">Building change</button>
+                <div class="col">
+                    <input type="number" step="1" min="1" max="10"id="buildingThreeInput" value="3" />
                 </div>
-
-
+                <div class="col">
+                    <input type="number" step="1" min="1" max="10" id="buildingFourInput" value="4" />
+                </div>
+                <div class="col">
+                    <input type="number" step="1" min="1" max="10" id="buildingFiveInput" value="5" />
+                </div>
+                <div class="col">
+                    <input type="number" step="1" min="1" max="10" id="buildingSixInput" value="6" />
+                </div>
             </div>
-        </div>
+               
+                
+                <div class="row text-center ">
+                    <button class="btn btn-success" id="button">Building change</button>
+                </div>
+
+
+           
+            </div>
 
     </section>
     <!-- Main Content Ends -->
