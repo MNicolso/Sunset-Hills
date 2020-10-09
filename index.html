@@ -62,9 +62,9 @@
     <header class="header" id="navbar-collapse-toggle">
         <!-- Fixed Navigation Starts -->
         <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-            <li class="icon-box active">
+            <li class="icon-box active" data-toggle="modal" data-target="#instructionModal">
                 <i class="fa fa-info-circle"></i>
-                <a href="">
+                <a>
                     <h2>instructions</h2>
                 </a>
             </li>
@@ -112,16 +112,16 @@
                 <h1 class="text-uppercase poppins-font"><span>SunSet </span>Hills</h1>
                 <p class="open-sans-font text-dark h4"> <span class="h4" id="statusBox"></span></p>
                 <p class="open-sans-font text-dark h4"> <span id="printBox"></span></p>
-            </div>   
-                <div class="row container fluid">
+            </div>
+            <div class="row container fluid">
                 <div class="col">
-                    <input type="number" step="1" min="1" max="10"id="buildingOneInput" value="1" />
+                    <input type="number" step="1" min="1" max="10" id="buildingOneInput" value="1" />
                 </div>
                 <div class="col">
                     <input type="number" step="1" min="1" max="10" id="buildingTwoInput" value="2" />
                 </div>
                 <div class="col">
-                    <input type="number" step="1" min="1" max="10"id="buildingThreeInput" value="3" />
+                    <input type="number" step="1" min="1" max="10" id="buildingThreeInput" value="3" />
                 </div>
                 <div class="col">
                     <input type="number" step="1" min="1" max="10" id="buildingFourInput" value="4" />
@@ -133,18 +133,43 @@
                     <input type="number" step="1" min="1" max="10" id="buildingSixInput" value="6" />
                 </div>
             </div>
-               
-                
-                <div class="row text-center ">
-                    <button class="btn btn-success" id="button">Building change</button>
-                </div>
 
 
-           
+            <div class="row text-center ">
+                <button class="btn btn-success" id="button">Building change</button>
             </div>
+
+
+
+        </div>
 
     </section>
     <!-- Main Content Ends -->
+    <!-- Modal starts -->
+    <div class="modal" id="instructionModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">INSTRUCTIONS</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Instructions will go here.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ends -->
     <!-- Template JS Files -->
     <script src="Scripts/jquery-3.5.0.min.js"></script>
     <script src="Scripts/preloader.min.js"></script>
