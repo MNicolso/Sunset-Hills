@@ -29,6 +29,7 @@
     }
 
 
-    document.getElementById('printBox').innerHTML = `Total buildings in sun:${buildingCount} building number:[${sunBuildingArray}]`;
+    document.getElementById('printBox').innerHTML = `Levels of buildings in sun:${sunBuildingArray}`;
+    document.getElementById('statusBox').innerHTML = `Total buildings in sun:${ buildingCount}`;
 
 })
